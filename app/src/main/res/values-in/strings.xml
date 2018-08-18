@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Pelem Zaman Now</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Adam Mukharil Bachtiar</string>
+    <string name="nav_header_subtitle">adam@email.unikom.ac.id</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="now_playing">Sedang Diputar</string>
+    <string name="upcoming">Yang Akan Datang</string>
+    <string name="search_movie">Cari Film</string>
+    <string name="app_language">Bahasa Aplikasi</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="configuration">Konfigurasi</string>
+    <string name="language">en-us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="movie_picture">Poster Film</string>
+    <string name="movie_title">Judul Film</string>
+    <string name="film_description">Deskripsi Film</string>
+    <string name="detail">Detail</string>
+    <string name="share">Bagikan</string>
+    <string name="movie_title_detail">Judul Film Detail</string>
+    <string name="rate_average">Rata-rata Rate</string>
+    <string name="colon">:</string>
+    <string name="vote_count">Jumlah Vote</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="description">Deskripsi</string>
+    <string name="copyright_by_tmdb">Hak cipta dilindungi TMDB</string>
+    <string name="search_by_title">Cari Berdasarkan Judul Film</string>
+    <string name="movie_detail">Detail Film</string>
+    <string name="now_playing_movie">Film Sedang Diputar</string>
+    <string name="upcoming_movie">Film yang Akan Datang</string>
+</resources>
