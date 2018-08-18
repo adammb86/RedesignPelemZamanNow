@@ -57,7 +57,11 @@
         </service>
 
         <receiver
-            android:name=".notification.AlarmReceiver"
+            android:name=".notification.DailyReminderReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".notification.DailyReleaseReminder"
             android:enabled="true"
             android:exported="true" />
 
