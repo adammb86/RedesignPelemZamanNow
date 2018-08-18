@@ -5,11 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Binder;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
@@ -18,8 +16,6 @@ import com.bumptech.glide.request.target.Target;
 import com.example.adammb.redesignpelemzamannow.R;
 import com.example.adammb.redesignpelemzamannow.data.model.Pelem;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import static com.example.adammb.redesignpelemzamannow.db.DatabaseContract.CONTENT_URI;
