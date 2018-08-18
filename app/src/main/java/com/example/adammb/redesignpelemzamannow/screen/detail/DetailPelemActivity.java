@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.adammb.redesignpelemzamannow.R;
@@ -105,5 +106,7 @@ public class DetailPelemActivity extends AppCompatActivity{
         args.put(VOTE_AVERAGE,pelem.getVote_average());
         args.put(VOTE_COUNT,pelem.getVote_count());
         getContentResolver().insert(CONTENT_URI, args);
+
+        Toast.makeText(this,"This film is already listed in your Favorite List",Toast.LENGTH_LONG).show();
     }
 }

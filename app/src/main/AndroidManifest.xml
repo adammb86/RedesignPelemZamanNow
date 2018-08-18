@@ -3,8 +3,14 @@
     package="com.example.adammb.redesignpelemzamannow">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <permission android:name="com.example.adammb.redesignpelemzamannow.READ_DATABASE" android:protectionLevel="normal"/>
-    <permission android:name="com.example.adammb.redesignpelemzamannow.WRITE_DATABASE" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.example.adammb.redesignpelemzamannow.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.adammb.redesignpelemzamannow.WRITE_DATABASE"
+        android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -22,15 +28,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".screen.detail.DetailPelemActivity"/>
+        <activity android:name=".screen.detail.DetailPelemActivity" />
 
         <provider
-            android:authorities="com.example.adammb.redesignpelemzamannow"
             android:name=".db.PelemProvider"
+            android:authorities="com.example.adammb.redesignpelemzamannow"
             android:exported="true"
             android:readPermission="com.example.adammb.redesignpelemzamannow.READ_DATABASE"
             android:writePermission="com.example.adammb.redesignpelemzamannow.WRITE_DATABASE" />
+
+        <receiver android:name=".widget.WidgetFavourite">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_favourite_info" />
+        </receiver>
+
+        <service android:name=".widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" >
+
+        </service>
     </application>
 
 </manifest>
