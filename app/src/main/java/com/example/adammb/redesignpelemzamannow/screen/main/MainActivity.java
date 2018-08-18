@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.adammb.redesignpelemzamannow.R;
+import com.example.adammb.redesignpelemzamannow.notification.AlarmReceiver;
 import com.example.adammb.redesignpelemzamannow.screen.favorite.FavoriteFragment;
 import com.example.adammb.redesignpelemzamannow.screen.now_playing.NowPlayingFragment;
 import com.example.adammb.redesignpelemzamannow.screen.search.SearchMovieFragment;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
+
+        AlarmReceiver.setAlarm(this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
